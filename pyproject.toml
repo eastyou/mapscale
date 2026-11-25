@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mapscale"
+version = "0.1.0"
+description = "初中地理比例尺工具：计算实际距离、反求比例尺、绘制线段比例尺并生成练习纸"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["python", "education", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Natural Language :: Chinese (Simplified)",
+]
+
+[project.scripts]
+mapscale = "mapscale.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/mapscale"
+Source = "https://github.com/eastyou/mapscale"
+
+[tool.setuptools]
+packages = ["mapscale"]
